@@ -12,12 +12,13 @@ import { JwtModule } from '@nestjs/jwt';
   imports: [
     UsersModule,
     TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: process.env.DB_HOST, // Cambia esto por la dirección de tu servidor MySQL
-      port: 3306, // Puerto por defecto de MySQL
-      username: process.env.DB_USER, // Cambia esto por tu usuario de MySQL
-      password: process.env.DB_PASS, // Cambia esto por tu contraseña de MySQL
-      database: process.env.DB_NAME, // Cambia esto por el nombre de tu base de datos
+      // type: 'mysql',
+      type: 'sqlite',
+      // host: process.env.DB_HOST, // Cambia esto por la dirección de tu servidor MySQL
+      // port: 3306, // Puerto por defecto de MySQL
+      // username: process.env.DB_USER, // Cambia esto por tu usuario de MySQL
+      // password: process.env.DB_PASS, // Cambia esto por tu contraseña de MySQL
+      database: 'db', // Cambia esto por el nombre de tu base de datos
       entities: [User],
       synchronize: true,
     }),

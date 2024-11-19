@@ -1,8 +1,8 @@
 {
-  "name": "prueba-tenica-back",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "name": "back-api-prueba-tenica",
+  "version": "0.0.2",
+  "description": "Prueba tenica back",
+  "author": "Antonio Alonso",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
